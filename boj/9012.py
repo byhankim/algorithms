@@ -3,6 +3,7 @@
 #   -> stack pop할때 빈 스택인지 예외처리 필수
 #   -> integer를 for-loop에서 range로 안돌려서 났던 에러
 N = int(input())
+
 for _ in range(N):
     s = input()
     stack = []
