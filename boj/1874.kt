@@ -25,7 +25,7 @@ fun main() = with(System.`in`.bufferedReader()) {
                 str.appendLine("+")
             }
         } else if (stack.isNotEmpty() && stack.peek() > arr[index]) { // top > num
-            while (stack.peek() < arr[index]) {
+            while (stack.peek() > arr[index]) {
                 stack.pop()
                 str.appendLine("-")
             }
