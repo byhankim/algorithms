@@ -1,8 +1,13 @@
 # 알고리즘 공부공부
+
 ## BOJ
-- boj1918
+
+- [1874] [스택 수열](https://www.acmicpc.net/problem/1874)
+
 ## Programmers
+
 ### Level 1
+
 - [D01] 크레인 인형뽑기
 - [D01] 두개 뽑아 더하기
 - [D02] 완주하지 못한 선수

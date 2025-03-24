@@ -1,3 +1,0 @@
-# 20. 12. 08.
-def solution(n):
-    return ("수박" * (n // 2 + 1))[:n]
