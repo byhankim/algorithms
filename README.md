@@ -10,5 +10,6 @@
 - [2798] [블랙잭](https://www.acmicpc.net/problem/2798)
 - [10872] [팩토리얼](https://www.acmicpc.net/problem/10872)
 - [17478] [재귀함수가 뭔가요?](https://www.acmicpc.net/problem/17478)
+- [1926] [그림/bfs](https://www.acmicpc.net/problem/1926)
 
 ## Programmers
