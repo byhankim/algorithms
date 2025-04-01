@@ -23,7 +23,7 @@ fun main() = with(System.`in`.bufferedReader()) {
     // Queue 정의
     val q = ArrayDeque<Pair<Int, Int>>()
 
-    var res = -1
+    var res = 0
     var paintingSize = 0
     var paintingCnt = 0
 
