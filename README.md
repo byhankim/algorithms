@@ -12,5 +12,6 @@
 - [17478] [재귀함수가 뭔가요?](https://www.acmicpc.net/problem/17478)
 - [1926] [그림/bfs](https://www.acmicpc.net/problem/1926)
 - [2178] [미로 탐색/bfs](https://www.acmicpc.net/problem/2178)
+- [7576] [미로 탐색/bfs](https://www.acmicpc.net/problem/7576)
 
 ## Programmers
