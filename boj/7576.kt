@@ -8,7 +8,7 @@ fun main() = with(System.`in`.bufferedReader()) {
     val dx = intArrayOf(1, 0, -1, 0)
     val dy = intArrayOf(0, -1, 0, 1)
 
-    val tomatoCount = mutableMapOf<Int, Int>()
+    var zeroCount = 0
 
     val box = Array(n) { IntArray(m) }
     val q = ArrayDeque<Pair<Int, Int>>()
@@ -19,42 +19,36 @@ fun main() = with(System.`in`.bufferedReader()) {
         repeat(m) { y ->
             val tomato = st.nextToken().toInt()
             box[x][y] = tomato
-            tomatoCount[tomato] = tomatoCount.getOrDefault(tomato, 0) + 1
+
+            if (tomato == 0) zeroCount++
             if (tomato == 1) {
                 q.addLast(Pair(x, y))
             }
         }
     }
-    if (tomatoCount.getOrDefault(0, 0) == 0) {
+    if (zeroCount == 0) {
         print(0)
         return
     }
 
     while (q.isNotEmpty()) {
-        val cur = q.removeFirst()
+        val (x,y) = q.removeFirst()
 
         for (dir in 0 until 4) {
-            val nx = cur.first + dx[dir]
-            val ny = cur.second + dy[dir]
+            val nx = x + dx[dir]
+            val ny = y + dy[dir]
 
             if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue
             if (box[nx][ny] != 0) continue
 
             q.addLast(Pair(nx, ny))
 
-            box[nx][ny] = box[cur.first][cur.second] + 1
-
-            val new = box[nx][ny]
-
-            tomatoCount[0] = tomatoCount.getOrDefault(0, 0) - 1
-            tomatoCount[new] = tomatoCount.getOrDefault(new, 0) + 1
-
-            if (new > max) {
-                max = new
-            }
+            box[nx][ny] = box[x][y] + 1
+            zeroCount--
+            max = maxOf(max, box[nx][ny])
         }
     }
-    if (tomatoCount.getOrDefault(0, 0) > 0) {
+    if (zeroCount > 0) {
         print(-1)
     } else {
         print(max - 1)
