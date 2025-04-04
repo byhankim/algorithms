@@ -13,5 +13,7 @@
 - [1926] [그림/bfs](https://www.acmicpc.net/problem/1926)
 - [2178] [미로 탐색/bfs](https://www.acmicpc.net/problem/2178)
 - [7576] [토마토/bfs](https://www.acmicpc.net/problem/7576)
+- [7569] [토마토/bfs](https://www.acmicpc.net/problem/7569)
+- [4179] [불!/bfs](https://www.acmicpc.net/problem/4179)
 
 ## Programmers
