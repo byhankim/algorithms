@@ -15,5 +15,6 @@
 - [7576] [토마토/bfs](https://www.acmicpc.net/problem/7576)
 - [7569] [토마토/bfs](https://www.acmicpc.net/problem/7569)
 - [4179] [불!/bfs](https://www.acmicpc.net/problem/4179)
+- [5247] [불/bfs](https://www.acmicpc.net/problem/5247)
 
 ## Programmers
