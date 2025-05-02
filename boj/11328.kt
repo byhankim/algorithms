@@ -1,8 +1,5 @@
 fun main()  = with(System.`in`.bufferedReader()){
-
-    val bw = System.out.bufferedWriter()
     val sb = StringBuilder()
-
     val N = readLine().toInt()
 
     repeat(N) {
@@ -13,6 +10,9 @@ fun main()  = with(System.`in`.bufferedReader()){
 
 fun canStrfry(str: String) : String {
     val (str1, str2) = str.split(" ")
+    if (str1.length != str2.length)
+        return "Impossible"
+
     val arr1 = IntArray(26)
     val arr2 = IntArray(26)
 
